@@ -1,6 +1,8 @@
 import { graphql } from 'gatsby';
-import * as React from 'react';
-import * as styles from './Index.module.scss';
+import React from 'react';
+import 'typeface-nunito-sans';
+import './index.scss';
+// import * as styles from './Index.module.scss';
 
 interface IndexPageProps {
   data: {
@@ -8,8 +10,8 @@ interface IndexPageProps {
       siteMetadata: {
         name: string;
         tagline: string;
-      },
-    },
+      };
+    };
   };
 }
 
@@ -25,17 +27,22 @@ export const indexPageQuery = graphql`
 `;
 
 export default class IndexPage extends React.Component<IndexPageProps, {}> {
-
   public render() {
-    const {
-      name,
-      tagline,
-    } = this.props.data.site.siteMetadata;
+    const { name, tagline } = this.props.data.site.siteMetadata;
 
     return (
-      <div className={styles.Container}>
-        <h1>{name}</h1>
-        <p>{tagline}</p>
+      <div className="App">
+        <div className="backgroundImage" />
+        <div className="spinnerOuterRombus" />
+        <div className="spinnerMiddleRombus" />
+        <div className="innerRombus">
+          <div className="nameContainer">
+            <p className="name">
+              Eleni <br />
+              Zoumpoulaki
+            </p>
+          </div>
+        </div>
       </div>
     );
   }
