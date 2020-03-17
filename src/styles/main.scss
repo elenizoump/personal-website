@@ -1,0 +1,333 @@
+body {
+  margin: 0;
+}
+
+.all-wrapper {
+  text-align: center;
+  font-family: 'Catamaran', 'Cormorant Garamond', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 58px;
+}
+
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  .navbar {
+    padding: 0 !important;
+  }
+}
+
+.content-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  // background-color: rgb(125, 194, 194);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Cormorant Garamond';
+  font-weight: bolder;
+}
+
+h5 {
+  font-family: 'Catamaran';
+  font-size: medium;
+}
+
+p {
+  font-family: 'Catamaran';
+  font-weight: lighter;
+}
+
+.pictureContainer {
+  @media (min-width: 1093px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38%;
+    height: 100%;
+    min-height: 0;
+  }
+
+  width: 100%;
+  position: relative;
+  height: auto;
+  min-height: 100vh;
+  //border: 2px solid red;
+  background-image: url('./../images/profilePic.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .nameContainer {
+    position: absolute;
+    top: 0;
+    right: 18px;
+    //border: 2px solid purple;
+    font-size: 3rem;
+    padding: 0;
+
+    h1 {
+      padding-top: 4rem;
+      padding-bottom: 0.7rem;
+
+      margin: 0;
+      font-size: 3rem;
+      text-shadow: 0px 0px 11px white;
+    }
+
+    h4 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin: 0;
+      text-shadow: 0px 0px 5px white;
+    }
+  }
+}
+
+.aboutContainer {
+  background-color: rgb(125, 194, 194);
+  box-sizing: border-box;
+  background-image: url('../images/aboutContainerPic.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  //border: 2px solid orange;
+  @media (min-width: 1093px) {
+    height: 100%;
+    width: 62%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .aboutContainerContentWrapper {
+    position: relative;
+
+    @media (min-width: 1093px) {
+      padding-top: 118px;
+      width: 100%;
+      height: 100%;
+    }
+    //border: 2px solid purple;
+    h1 {
+      margin: 0;
+    }
+    .personalProfile {
+      box-sizing: border-box;
+      padding: 25px 0;
+      text-align: center;
+
+      @media (min-width: 1093px) {
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        padding: 35px 0;
+      }
+    }
+
+    .profileTextWrapper {
+      @media (min-width: 1093px) {
+        overflow-y: auto;
+      }
+      position: relative;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+    }
+
+    .profileText {
+      @media (min-width: 1093px) {
+        position: absolute;
+        top: 0;
+        padding-right: 120px;
+        padding-left: 120px;
+      }
+      position: relative;
+      box-sizing: border-box;
+      padding: 0 30px 9px 30px;
+
+      > div {
+        margin-top: 2rem;
+      }
+      > div:first-child {
+        margin-top: 0;
+      }
+      p {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        width: fit-content;
+        text-align: left;
+        background-color: rgba(255, 255, 255, 0.51);
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 2px rgba(89, 158, 152, 0.62);
+        font-weight: 300;
+        margin-top: 0.5rem;
+      }
+      h4 {
+        margin: 0;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+.bg-light {
+  background-color: #ebfdff !important;
+}
+
+.navbar-brand {
+  @media (min-width: 1093px) {
+    font-size: 2rem !important;
+    margin-right: 15rem !important;
+    width: 22%;
+  }
+  font-size: 2rem !important;
+}
+
+.navbar-toggler {
+  margin-right: 1rem;
+}
+
+.nav-link {
+  font-family: 'Cormorant Garamond';
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+}
+
+.navbar-img {
+  position: absolute;
+  right: 0;
+  top: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: fit-content;
+  img {
+    height: 2rem;
+    width: auto;
+  }
+}
+
+.projectsWrapper {
+  box-sizing: border-box;
+  margin: 25px;
+  text-align: center;
+  background-color: rosybrown;
+  height: 100%;
+
+  @media (min-width: 1093px) {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    padding: 35px 0;
+  }
+}
+
+.projectStyle1 {
+  background-image: url('../images/aboutContainerPic.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 40%;
+  padding: 10px;
+  background-color: black;
+  box-sizing: border-box;
+  border: 2px solid blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  .projectPicContainer {
+    background-color: rgb(125, 194, 194);
+    box-sizing: border-box;
+    background-image: url('../images/aboutContainerPic.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid purple;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10%;
+    @media (min-width: 1093px) {
+      // height: 50%;
+      // width: 100%;
+      // position: absolute;
+      // bottom: 0;
+      // padding: 10%;
+    }
+  }
+}
+
+.projectStyle2 {
+  background-image: url('../images/aboutContainerPic.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 40%;
+  padding: 10px;
+  background-color: black;
+  box-sizing: border-box;
+  border: 2px solid blue;
+  position: absolute;
+  top: 0;
+  right: 0;
+  .projectPicContainer {
+    background-color: rgb(125, 194, 194);
+    box-sizing: border-box;
+    background-image: url('../images/aboutContainerPic.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid purple;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10%;
+    @media (min-width: 1093px) {
+      // height: 50%;
+      // width: 100%;
+      // position: absolute;
+      // bottom: 0;
+      // padding: 10%;
+    }
+  }
+}
+
+// //ipad
+// @media (max-width: 1366px) {
+//   .portfolioContainer {
+//     width: 26%;
+//   }
+// }
+
+@media (min-width: 1093px) {
+  .portfolioContainer {
+    width: 17%;
+  }
+}

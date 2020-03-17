@@ -12,13 +12,15 @@
   },
   "dependencies": {
     "@babel/core": "^7.8.7",
+    "bootstrap": "^4.4.1",
     "gatsby": "^2.19.34",
     "gatsby-plugin-sass": "^2.1.30",
     "gatsby-plugin-typescript": "^2.2.2",
     "node-sass": "^4.13.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "typeface-nunito-sans": "^0.0.72",
+    "typeface-catamaran": "^0.0.72",
+    "typeface-cormorant-garamond": "^0.0.72",
     "typescript": "^3.8.3",
     "webpack": "^4.42.0"
   },
