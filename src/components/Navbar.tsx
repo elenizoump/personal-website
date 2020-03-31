@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 import SpecialLink from './SpecialLink';
 import linkedInLogo from '../images/linkedInLogo.png';
 import gitHubLogo from '../images/gitHubLogo.png';
-import emailLogo from '../images/emailLogo.png';
+//import emailLogo from '../images/emailLogo.png';
 
 const Navbar: FunctionComponent = () => (
   <div className="navbar-wrapper">
@@ -28,7 +28,7 @@ const Navbar: FunctionComponent = () => (
               About
             </SpecialLink>
             <SpecialLink className="nav-item nav-link" href="/education">
-              Education
+              Academic & Professional Background
             </SpecialLink>
             <SpecialLink className="nav-item nav-link" href="/projects">
               Projects
@@ -36,15 +36,24 @@ const Navbar: FunctionComponent = () => (
           </div>
 
           <div className="navbar-img">
-            <SpecialLink className="nav-item nav-link" href="#">
+            <SpecialLink
+              className="nav-item nav-link"
+              href="www.linkedin.com/in/elenizoump"
+            >
               <img src={linkedInLogo} alt="linkedIn Logo" />
             </SpecialLink>
-            <SpecialLink className="nav-item nav-link" href="#">
+            <SpecialLink
+              className="nav-item nav-link"
+              href="https://github.com/elenizoump"
+            >
               <img src={gitHubLogo} alt="github Logo" />
             </SpecialLink>
-            <SpecialLink className="nav-item nav-link" href="#">
+            {/* <SpecialLink
+              className="nav-item nav-link"
+              href="mailto:elenizoump@hotmail.com"
+            >
               <img src={emailLogo} alt="email Logo" />
-            </SpecialLink>
+            </SpecialLink> */}
           </div>
         </div>
       </div>

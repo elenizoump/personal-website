@@ -13,6 +13,7 @@
   "dependencies": {
     "@babel/core": "^7.8.7",
     "@types/radium": "^0.24.2",
+    "@types/react-dom": "^16.9.5",
     "bootstrap": "^4.4.1",
     "gatsby": "^2.19.34",
     "gatsby-plugin-sass": "^2.1.30",
@@ -23,6 +24,7 @@
     "react-dom": "^16.13.0",
     "react-horizontal-timeline": "^1.5.3",
     "react-motion": "^0.5.2",
+    "react-spring": "^8.0.27",
     "typeface-catamaran": "^0.0.72",
     "typeface-cormorant-garamond": "^0.0.72",
     "typescript": "^3.8.3",

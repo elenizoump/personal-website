@@ -9,7 +9,7 @@ interface SpecialLinkProps {
 const SpecialLink: FunctionComponent<SpecialLinkProps> = ({
   children,
   href,
-  className
+  className,
 }) =>
   href.startsWith('/') ? (
     <Link
@@ -24,7 +24,7 @@ const SpecialLink: FunctionComponent<SpecialLinkProps> = ({
       className={`${className} link--external`}
       href={href}
       target="_blank"
-      rel="nofollow noreferer noopener"
+      rel="nofollow noreferrer noopener"
     >
       {children}
     </a>
