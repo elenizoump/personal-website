@@ -2,27 +2,18 @@ import React, { FunctionComponent } from 'react';
 import SpecialLink from './SpecialLink';
 import linkedInLogo from '../images/linkedInLogo.png';
 import gitHubLogo from '../images/gitHubLogo.png';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 //import emailLogo from '../images/emailLogo.png';
 
-const Navbar: FunctionComponent = () => (
+const NavbarComponent: FunctionComponent = () => (
   <div className="navbar-wrapper">
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <SpecialLink className="navbar-brand nav-link" href="/about">
         Eleni Zoumpoulaki
       </SpecialLink>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon" />
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav">
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="mr-auto">
           <div className="navbar-links">
             <SpecialLink className="nav-item nav-link" href="/about">
               About
@@ -38,7 +29,7 @@ const Navbar: FunctionComponent = () => (
           <div className="navbar-img">
             <SpecialLink
               className="nav-item nav-link"
-              href="www.linkedin.com/in/elenizoump"
+              href="https://www.linkedin.com/in/elenizoump/"
             >
               <img src={linkedInLogo} alt="linkedIn Logo" />
             </SpecialLink>
@@ -55,10 +46,10 @@ const Navbar: FunctionComponent = () => (
               <img src={emailLogo} alt="email Logo" />
             </SpecialLink> */}
           </div>
-        </div>
-      </div>
-    </nav>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   </div>
 );
 
-export default Navbar;
+export default NavbarComponent;

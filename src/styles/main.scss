@@ -1,3 +1,4 @@
+@import '~bootstrap/scss/bootstrap';
 body {
   margin: 0;
 }
@@ -206,6 +207,11 @@ p {
 .navbar-toggler {
   margin-right: 1rem;
 }
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
 
 .nav-link {
   font-family: 'Cormorant Garamond';
@@ -215,20 +221,25 @@ p {
   margin-left: 1rem;
 }
 .navbar-links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: fit-content;
+  @media (min-width: 992px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+  }
 }
 
 .navbar-img {
-  position: absolute;
-  right: 0;
-  top: 4px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  width: fit-content;
+  @media (min-width: 992px) {
+    position: absolute;
+    right: 0;
+    top: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: fit-content;
+  }
+
   img {
     height: 2rem;
     width: auto;

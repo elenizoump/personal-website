@@ -3,7 +3,7 @@ import 'typeface-cormorant-garamond';
 import 'typeface-catamaran';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/main.scss';
-import Navbar from '../components/navbar';
+import NavbarComponent from '../components/navbar';
 
 // interface MainLayoutProps {
 //   imgsrc: string;
@@ -11,7 +11,7 @@ import Navbar from '../components/navbar';
 
 const MainLayout: FunctionComponent = ({ children }) => (
   <div className="all-wrapper">
-    <Navbar />
+    <NavbarComponent />
     <div
       className="content-wrapper"
       // style={{ backgroundImage: `url(${imgsrc})` }}
