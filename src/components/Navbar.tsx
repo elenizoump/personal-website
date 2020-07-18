@@ -15,10 +15,13 @@ const NavbarComponent: FunctionComponent = () => (
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
           <div className="navbar-links">
-            <SpecialLink className="nav-item nav-link" href="/about">
+            <SpecialLink className="nav-item nav-link --mainlink" href="/about">
               About
             </SpecialLink>
-            <SpecialLink className="nav-item nav-link" href="/education">
+            <SpecialLink
+              className="nav-item nav-link --mainlink"
+              href="/education"
+            >
               Academic & Professional Background
             </SpecialLink>
             <SpecialLink className="nav-item nav-link" href="/projects">

@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import HomeLayout from '../layouts/Home';
+import SpecialLink from '../components/SpecialLink';
 
 const IndexPage: FunctionComponent = () => (
   <HomeLayout>
@@ -9,7 +10,9 @@ const IndexPage: FunctionComponent = () => (
       <div className="spinnerMiddleRombus" />
       <div className="innerRombus">
         <div className="portfolioContainer">
-          <h1 className="portfolio">Portfolio</h1>
+          <SpecialLink className="nameLink" href="/about">
+            <h1 className="portfolio">Portfolio</h1>
+          </SpecialLink>
         </div>
       </div>
     </div>

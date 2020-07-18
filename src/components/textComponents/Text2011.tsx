@@ -25,10 +25,13 @@ const Text2015: FunctionComponent = () => (
           <section className="text-content">
             <hr className="upperHr" />
             <p className="card-text">
-              My interest in life-sciences and love for animals led me to the
-              desicion to pursue a career in Animal Health and therefore after
-              graduating and getting my high-school diploma in 2011, I moved to
-              Scotland and started my Bachelor at Edinburgh Napier University.
+              My interest and curiosity in life-sciences and love for animals
+              led me to pursue a career in Animal Health. After graduating with
+              my high-school diploma in 2011, I moved to Scotland and started my
+              Bachelor at Edinburgh Napier University. Following graduation, I
+              started my professional carrer in various Small Animal Veterinary
+              Clinics throughout Scotland until my decision to relocate in
+              Zürich in 2018.
             </p>
             <hr className="lowerHr" />
           </section>

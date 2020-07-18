@@ -22,10 +22,14 @@ const Text2019: FunctionComponent = () => (
           <section className="text-content">
             <hr className="upperHr" />
             <p className="card-text">
-              My interest in life-sciences and love for animals led me to the
-              desicion to pursue a career in Animal Health and therefore after
-              graduating and getting my high-school diploma in 2011, I moved to
-              Scotland and started my Bachelor at Edinburgh Napier University.
+              During my stay in Scotland, I was slowly introduced to Web
+              Development which unknowlingly would turn into a life-long dream
+              of mine. After my relocation in Switzerland my love for Web
+              Development became apparent and in 2019 I finally took a leap of
+              faith towards turning my dream into reality. I researched ways of
+              entering into the professional Web development world which led me
+              to join the full-stack Web Development programm at Ironhack School
+              of Web Development.
             </p>
             <hr className="lowerHr" />
           </section>

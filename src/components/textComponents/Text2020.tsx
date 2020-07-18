@@ -22,10 +22,12 @@ const Text2020: FunctionComponent = () => (
           <section className="text-content">
             <hr className="upperHr" />
             <p className="card-text">
-              My interest in life-sciences and love for animals led me to the
-              desicion to pursue a career in Animal Health and therefore after
-              graduating and getting my high-school diploma in 2011, I moved to
-              Scotland and started my Bachelor at Edinburgh Napier University.
+              Completing the course I graduated in 2020 and I came to realize in
+              was one of the best decision of my life. My thirst for learning
+              new technologies and enthousiasm for the profession only became
+              stonger. Through this experience I learned not only new things
+              about programming but also a lot about my self that allowed me to
+              improve myself professionally as well as at a personal level.
             </p>
             <hr className="lowerHr" />
           </section>

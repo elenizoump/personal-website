@@ -134,6 +134,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
+
+  .nameLink:hover {
+    transform: scale(1);
+    text-decoration: none;
+    h1 {
+      // color: rgb(127, 187, 186);
+      color: rgb(95, 125, 125);
+    }
+  }
+}
+
+.portfolioContainer:hover {
+  transform: scale(1.5);
 }
 
 .portfolio {
