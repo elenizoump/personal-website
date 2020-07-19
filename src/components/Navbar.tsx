@@ -19,12 +19,15 @@ const NavbarComponent: FunctionComponent = () => (
               About
             </SpecialLink>
             <SpecialLink
-              className="nav-item nav-link --mainlink"
+              className="nav-item nav-link --mainlink --education"
               href="/education"
             >
               Academic & Professional Background
             </SpecialLink>
-            <SpecialLink className="nav-item nav-link" href="/projects">
+            <SpecialLink
+              className="nav-item nav-link --mainlink"
+              href="/projects"
+            >
               Projects
             </SpecialLink>
           </div>
