@@ -20,27 +20,43 @@ const Project: FunctionComponent = ({ children }) => {
     xys: [0, 0, 1],
     config: { mass: 5, tension: 350, friction: 40 },
   }));
+  const [style, setStyle] = useState({});
+  const [calculated, setCalculated] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   const onMouseMove = useCallback(
     ({ clientX: x, clientY: y }) => {
       if (mounted) {
         set({ xys: calc(x, y) });
+        setCalculated(true);
       }
     },
     [mounted]
   );
 
+  const onMouseLeave = useCallback(() => {
+    if (mounted) {
+      set({ xys: [0, 0, 1] });
+      setCalculated(true);
+    }
+  }, [mounted]);
+
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (calculated) {
+      setStyle({ transform: props.xys.interpolate(trans) });
+    }
+  }, [calculated]);
 
   return (
     <animated.div
       className="project"
       onMouseMove={onMouseMove}
-      onMouseLeave={() => set({ xys: [0, 0, 1] })}
-      style={{ transform: props.xys.interpolate(trans) }}
+      onMouseLeave={onMouseLeave}
+      style={style}
     >
       {children}
     </animated.div>
