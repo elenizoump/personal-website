@@ -3,7 +3,7 @@ import 'typeface-cormorant-garamond';
 import 'typeface-catamaran';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/main.scss';
-import NavbarComponent from '../components/navbar';
+import NavbarComponent from '../components/Navbar';
 
 const MainLayout: FunctionComponent = ({ children }) => (
   <div className="all-wrapper">
