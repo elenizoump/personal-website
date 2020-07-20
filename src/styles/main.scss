@@ -398,6 +398,9 @@ p {
     // font-size: 2vw;
     margin: 0;
     font-weight: 500;
+    @media only screen and (max-width: 600px) {
+      font-size: 1.5rem !important;
+    }
   }
   @media (max-width: 1280px) and (min-width: 601px) {
     height: 8.5vw;
@@ -405,6 +408,7 @@ p {
 
   @media only screen and (max-width: 600px) {
     height: 16.5vw;
+    font-size: 1.5rem !important;
   }
 }
 .educationContent {
@@ -566,6 +570,10 @@ p {
 .vertical-timeline-element:first-child {
   @media (max-width: 1280px) and (min-width: 601px) {
     margin-top: 0 !important;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 27px !important;
   }
 }
 .timelineEvents {
