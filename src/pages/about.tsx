@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from 'react';
 import MainLayout from '../layouts/Main';
-// import AboutBackgroundProfilePic from '../images/aboutBackgroundProfilePic.png';
 
 const AboutPage: FunctionComponent = () => (
   <MainLayout>

@@ -5,7 +5,6 @@ html {
 body {
   margin: 0;
 }
-
 h1,
 h2 {
   font-family: 'Cormorant Garamond';
@@ -18,16 +17,13 @@ h4 {
   font-weight: bolder;
   font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1600 - 300)));
 }
-
 h5 {
   font-family: 'Catamaran';
 }
-
 p {
   font-family: 'Catamaran';
   font-weight: lighter;
 }
-
 .all-wrapper {
   text-align: center;
   font-family: 'Catamaran', 'Cormorant Garamond', sans-serif;
@@ -37,7 +33,6 @@ p {
   box-sizing: border-box;
   padding-top: 72px;
 }
-
 .navbar-wrapper {
   position: fixed;
   top: 0;
@@ -51,25 +46,21 @@ p {
     height: 73px;
   }
 }
-
 .bg-light {
   background-color: #ebfdff !important;
 }
-
 .navbar-brand {
   @media (min-width: 1093px) {
     margin-right: 6vw !important;
     text-align: left;
     width: 22%;
   }
-
   @media (max-width: 400px) {
     margin: 0 !important;
     .nav-link {
       padding: 0.5rem;
     }
   }
-
   @media (max-width: 321px) {
     margin: 0 !important;
     a .nav-link {
@@ -78,7 +69,6 @@ p {
   }
   font-size: calc(28px + (36 - 28) * ((100vw - 300px) / (1900 - 300)));
 }
-
 .navbar-toggler {
   margin-right: 1rem;
 }
@@ -87,7 +77,6 @@ p {
   outline: none;
   box-shadow: none;
 }
-
 .nav-link {
   @media (min-width: 1024px) {
     margin-left: 1rem;
@@ -109,25 +98,12 @@ p {
   }
   background-color: rgb(235, 253, 255);
 }
-
-// .--mainlink {
-//   // @media (min-width: 1801px) {
-//   //   margin-right: 16vw;
-//   // }
-
-//   // @media (max-width: 1800px) {
-//   //   margin-right: 11vw;
-//   // }
-//   //margin-right: 1em;
-// }
-
 .--education {
   margin: 0 calc(28px + (200 - 28) * ((100vw - 300px) / (1900 - 300)));
   @media (max-width: 1090px) {
     margin: 0 calc(28px + (100 - 28) * ((100vw - 300px) / (1900 - 300)));
   }
 }
-
 .navbar-img {
   @media (min-width: 992px) {
     position: absolute;
@@ -140,11 +116,9 @@ p {
     width: fit-content;
     background-color: rgb(235, 253, 255);
   }
-
   @media (min-width: 1860px) {
     top: 6px;
   }
-
   img {
     @media (min-width: 992px) {
     }
@@ -154,13 +128,11 @@ p {
   }
   background-color: rgb(235, 253, 255);
 }
-
 .content-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
 }
-
 .pictureContainer {
   @media (min-width: 1093px) {
     position: absolute;
@@ -170,7 +142,6 @@ p {
     height: 100%;
     min-height: 0;
   }
-
   width: 100%;
   position: relative;
   height: auto;
@@ -179,7 +150,6 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
   .nameContainer {
     position: absolute;
     top: 0;
@@ -192,7 +162,6 @@ p {
       margin: 0;
       text-shadow: 0px 0px 11px white;
     }
-
     h4 {
       font-weight: 500;
       margin: 0;
@@ -200,7 +169,6 @@ p {
     }
   }
 }
-
 .aboutContainer {
   background-color: rgb(125, 194, 194);
   box-sizing: border-box;
@@ -215,16 +183,13 @@ p {
     top: 0;
     right: 0;
   }
-
   .aboutContainerContentWrapper {
     position: relative;
-
     @media (min-width: 1093px) {
       padding-top: 73px;
       width: 100%;
       height: 100%;
     }
-
     h1 {
       margin: 0;
       font-weight: 500;
@@ -239,7 +204,6 @@ p {
       box-sizing: border-box;
       padding: 25px 0;
       text-align: center;
-
       @media (min-width: 1093px) {
         top: 0;
         left: 0;
@@ -249,7 +213,6 @@ p {
         padding: 35px 0;
       }
     }
-
     .profileTextWrapper {
       @media (min-width: 1093px) {
         overflow-y: auto;
@@ -259,7 +222,6 @@ p {
       height: 100%;
       box-sizing: border-box;
     }
-
     .profileText {
       @media (min-width: 1093px) {
         position: absolute;
@@ -306,9 +268,6 @@ p {
     }
   }
 }
-
-// Projects Page
-
 .projectsContainer {
   background-color: rgb(125, 194, 194);
   box-sizing: border-box;
@@ -330,7 +289,6 @@ p {
       width: 100%;
       height: 100%;
     }
-    //border: 2px solid purple;
     h1 {
       margin: 0;
     }
@@ -412,20 +370,17 @@ p {
     width: 17%;
   }
 }
-
 .educationWrapper {
   position: relative;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  //padding-top: 4.5vw;
   background-color: rgb(125, 194, 194);
   background-image: url('../images/educationBackground.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
-
 .educationTitle {
   position: absolute;
   top: 0;
@@ -452,30 +407,18 @@ p {
     height: 16.5vw;
   }
 }
-
 .educationContent {
   width: 100%;
   height: 100%;
   overflow-y: auto;
   padding-top: calc(4.5vw + 2rem);
 }
-
-// .vertical-timeline-element--work {
-
-// }
-
 .vertical-timeline-element--work {
   @media only screen and (max-width: 600px) {
     margin: 7em 0px;
   }
-  // @media only screen and (min-width: 601px) {
-  //   width: 80%;
-  // }
   .vertical-timeline-element-content {
     box-shadow: none;
-    // background-color: rgba(255, 255, 255, 0.76) !important;
-    // color: black !important;
-    // border: 1px solid rgba(255, 255, 255, 0.76) !important;
     @media only screen and (max-width: 600px) {
       width: 64%;
       margin-left: 33% !important;
@@ -483,7 +426,6 @@ p {
       background-color: rgba(255, 255, 255, 0.76) !important;
       color: black !important;
       border: 1px solid rgba(255, 255, 255, 0.76) !important;
-      //box-shadow: 2px 3px 7px 3px #3e7673;
     }
     @media (max-width: 1280px) and (min-width: 601px) {
       width: 59% !important;
@@ -505,7 +447,6 @@ p {
     margin: 8rem 0 !important;
   }
 }
-
 .vertical-timeline::before {
   @media only screen and (max-width: 600px) {
     left: 44px !important;
@@ -518,7 +459,6 @@ p {
     background: #3a5964 !important;
   }
 }
-
 .vertical-timeline-element-date {
   @media only screen and (max-width: 600px) {
     font-size: 1.1rem !important;
@@ -527,7 +467,6 @@ p {
   font-size: 1.5rem !important;
   // font-size: 3rem !important;
 }
-
 .vertical-timeline-element-icon.bounce-in {
   @media only screen and (max-width: 600px) {
     height: 100px !important;
@@ -544,7 +483,6 @@ p {
     border: 4px solid #3a5964 !important;
   }
 }
-
 .vertical-timeline--two-columns
   .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left)
   .vertical-timeline-element-content
@@ -575,7 +513,6 @@ p {
     top: 38px !important;
     position: absolute;
   }
-
   left: 103% !important;
   top: 14px !important;
 }
@@ -604,7 +541,6 @@ p {
   font-family: 'Catamaran';
   font-weight: 300 !important;
   margin-bottom: 0.2rem !important;
-
   @media only screen and (min-width: 600px) {
     font-size: 1.3rem !important;
     font-weight: 300 !important;
@@ -614,11 +550,9 @@ p {
     font-size: 1.2rem !important;
   }
 }
-
 .vertical-timeline-element-content {
   border-radius: 2.25em;
 }
-
 .vertical-timeline-element-subtitle {
   font-family: 'Cormorant Garamond';
   font-size: 1rem;
@@ -647,11 +581,7 @@ p {
   justify-content: space-between;
   align-items: flex-end;
 }
-
 .textImage {
-  // margin: 0.5rem;
-  // margin-right: 1em;
-  // padding-top: 1rem;
   width: 100%;
   height: 100%;
 }

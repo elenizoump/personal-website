@@ -1,4 +1,9 @@
-import React, { FunctionComponent } from 'react';
+import React, {
+  FunctionComponent,
+  useEffect,
+  useCallback,
+  useState,
+} from 'react';
 import { useSpring, animated } from 'react-spring';
 
 const calc = (x: number, y: number) => [
@@ -15,10 +20,25 @@ const Project: FunctionComponent = ({ children }) => {
     xys: [0, 0, 1],
     config: { mass: 5, tension: 350, friction: 40 },
   }));
+  const [mounted, setMounted] = useState(false);
+
+  const onMouseMove = useCallback(
+    ({ clientX: x, clientY: y }) => {
+      if (mounted) {
+        set({ xys: calc(x, y) });
+      }
+    },
+    [mounted]
+  );
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <animated.div
       className="project"
-      onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+      onMouseMove={onMouseMove}
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
       style={{ transform: props.xys.interpolate(trans) }}
     >

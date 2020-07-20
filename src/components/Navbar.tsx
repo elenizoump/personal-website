@@ -2,8 +2,7 @@ import React, { FunctionComponent } from 'react';
 import SpecialLink from './SpecialLink';
 import linkedInLogo from '../images/linkedInLogo.png';
 import gitHubLogo from '../images/gitHubLogo.png';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-//import emailLogo from '../images/emailLogo.png';
+import { Navbar, Nav } from 'react-bootstrap';
 
 const NavbarComponent: FunctionComponent = () => (
   <div className="navbar-wrapper">
@@ -45,12 +44,6 @@ const NavbarComponent: FunctionComponent = () => (
             >
               <img src={gitHubLogo} alt="github Logo" />
             </SpecialLink>
-            {/* <SpecialLink
-              className="nav-item nav-link"
-              href="mailto:elenizoump@hotmail.com"
-            >
-              <img src={emailLogo} alt="email Logo" />
-            </SpecialLink> */}
           </div>
         </Nav>
       </Navbar.Collapse>
