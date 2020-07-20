@@ -99,7 +99,7 @@ p {
   background-color: rgb(235, 253, 255);
 }
 .--education {
-  margin: 0 calc(28px + (200 - 28) * ((100vw - 300px) / (1900 - 300)));
+  margin: 0 calc(53px + 172 * (50vw - 300px) / 1600);
   @media (max-width: 1090px) {
     margin: 0 calc(28px + (100 - 28) * ((100vw - 300px) / (1900 - 300)));
   }
@@ -417,6 +417,13 @@ p {
   overflow-y: auto;
   padding-top: calc(4.5vw + 2rem);
 }
+
+.vertical-timeline--two-columns {
+  @media (max-width: 1280px) and (min-width: 601px) {
+    max-width: 56vw;
+  }
+}
+
 .vertical-timeline-element--work {
   @media only screen and (max-width: 600px) {
     margin: 7em 0px;
