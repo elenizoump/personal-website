@@ -81,14 +81,6 @@ const ProjectsPage: FunctionComponent = () => (
             </Project>
             <Project>
               <div className="card mb-3">
-                {/* <iframe
-                
-                src="https://www.youtube.com/embed/oqiIjcGkQqo?loop=1"
-                // @ts-ignore
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen={true}
-              /> */}
                 <div className="card-body">
                   <h3 className="card-title">
                     Jungle City: Making cities and human settlements inclusive,
@@ -156,6 +148,72 @@ const ProjectsPage: FunctionComponent = () => (
                   >
                     Go to App
                   </SpecialLink>
+                </div>
+              </div>
+            </Project>
+            <Project>
+              <div className="card mb-3">
+                <iframe
+                  src="https://www.youtube.com/embed/coehQOC8N5c"
+                  style={{ margin: '0 auto' }}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen={true}
+                />
+                <div className="card-body">
+                  <h3 className="card-title">
+                    Emoji Sweeper: an exciting game with emojis{' '}
+                  </h3>
+                  <p className="card-text">
+                    Based on the original and full of suspence Sweeper game,
+                    this game ivites you to try your luck as you try to avoid
+                    clicking on the exploding emoji.
+                  </p>
+                  <p className="card-text">
+                    <small className="text-muted">
+                      “2020 may still be dragging on its bad luck but we are not
+                      unlucky!„
+                    </small>
+                  </p>
+                  {/* <SpecialLink
+                    className="project-link"
+                    href="https://claveefy.herokuapp.com/"
+                  >
+                    Go to App
+                  </SpecialLink> */}
+                </div>
+              </div>
+            </Project>
+            <Project>
+              <div className="card mb-3">
+                <iframe
+                  src="https://www.youtube.com/embed/TFD1-us3ErM"
+                  style={{ margin: '0 auto' }}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen={true}
+                />
+                <div className="card-body">
+                  <h3 className="card-title">
+                    Memoji: a fun memory game with emojis{' '}
+                  </h3>
+                  <p className="card-text">
+                    Based on the classic and universally loved memory game, this
+                    game challenges your memory skills as you try and match the
+                    emojis as fast as possible.
+                  </p>
+                  <p className="card-text">
+                    <small className="text-muted">
+                      “Have fun playing this modern spin-off of the all-time
+                      favorite memory game.„
+                    </small>
+                  </p>
+                  {/* <SpecialLink
+                    className="project-link"
+                    href="https://claveefy.herokuapp.com/"
+                  >
+                    Go to App
+                  </SpecialLink> */}
                 </div>
               </div>
             </Project>
