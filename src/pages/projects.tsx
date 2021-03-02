@@ -36,7 +36,7 @@ const ProjectsPage: FunctionComponent = () => (
                   </p>
                   <SpecialLink
                     className="project-link"
-                    href="https://challengeofhercules.netlify.com"
+                    href="https://challengeofhercules.netlify.app"
                   >
                     Play Game
                   </SpecialLink>
@@ -72,9 +72,9 @@ const ProjectsPage: FunctionComponent = () => (
                   </p>
                   <SpecialLink
                     className="project-link"
-                    href="https://twodaysaway.herokuapp.com"
+                    href="https://github.com/elenizoump/ProjectTwo-EleniAndMaria"
                   >
-                    Go to App
+                    Go to Repository
                   </SpecialLink>
                 </div>
               </div>
@@ -104,8 +104,11 @@ const ProjectsPage: FunctionComponent = () => (
                       cities in Portugal?„
                     </small>
                   </p>
-                  <a className="link--external" href="">
-                    Go to App
+                  <a
+                    className="link--external"
+                    href="https://github.com/elenizoump/Jungle-City"
+                  >
+                    Go to Repository
                   </a>
                 </div>
               </div>
@@ -144,9 +147,9 @@ const ProjectsPage: FunctionComponent = () => (
                   </p>
                   <SpecialLink
                     className="project-link"
-                    href="https://claveefy.herokuapp.com/"
+                    href="https://github.com/elenizoump/Final-Project"
                   >
-                    Go to App
+                    Go to Repository
                   </SpecialLink>
                 </div>
               </div>
@@ -175,12 +178,12 @@ const ProjectsPage: FunctionComponent = () => (
                       unlucky!„
                     </small>
                   </p>
-                  {/* <SpecialLink
+                  <SpecialLink
                     className="project-link"
-                    href="https://claveefy.herokuapp.com/"
+                    href="https://emojisweeper.netlify.app"
                   >
-                    Go to App
-                  </SpecialLink> */}
+                    Play Game
+                  </SpecialLink>
                 </div>
               </div>
             </Project>
@@ -208,12 +211,12 @@ const ProjectsPage: FunctionComponent = () => (
                       favorite memory game.„
                     </small>
                   </p>
-                  {/* <SpecialLink
+                  <SpecialLink
                     className="project-link"
-                    href="https://claveefy.herokuapp.com/"
+                    href="https://guessmoji.netlify.app"
                   >
-                    Go to App
-                  </SpecialLink> */}
+                    Play Game
+                  </SpecialLink>
                 </div>
               </div>
             </Project>
