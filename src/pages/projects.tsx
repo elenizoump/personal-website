@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import MainLayout from '../layouts/Main';
 import Project from '../layouts/Project';
 import SpecialLink from '../components/SpecialLink';
+import gitHubLogo from './../images/gitHubLogo.png';
 
 const ProjectsPage: FunctionComponent = () => (
   <MainLayout>
@@ -40,6 +41,12 @@ const ProjectsPage: FunctionComponent = () => (
                   >
                     Play Game
                   </SpecialLink>
+                  <SpecialLink
+                    className="project-link"
+                    href="https://github.com/elenizoump/game-hercules"
+                  >
+                    <img src={gitHubLogo} alt="github Logo" />
+                  </SpecialLink>
                 </div>
               </div>
             </Project>
@@ -74,7 +81,7 @@ const ProjectsPage: FunctionComponent = () => (
                     className="project-link"
                     href="https://github.com/elenizoump/ProjectTwo-EleniAndMaria"
                   >
-                    Go to Repository
+                    <img src={gitHubLogo} alt="github Logo" />
                   </SpecialLink>
                 </div>
               </div>
@@ -108,7 +115,7 @@ const ProjectsPage: FunctionComponent = () => (
                     className="link--external"
                     href="https://github.com/elenizoump/Jungle-City"
                   >
-                    Go to Repository
+                    <img src={gitHubLogo} alt="github Logo" />
                   </a>
                 </div>
               </div>
@@ -149,7 +156,7 @@ const ProjectsPage: FunctionComponent = () => (
                     className="project-link"
                     href="https://github.com/elenizoump/Final-Project"
                   >
-                    Go to Repository
+                    <img src={gitHubLogo} alt="github Logo" />
                   </SpecialLink>
                 </div>
               </div>
@@ -184,6 +191,12 @@ const ProjectsPage: FunctionComponent = () => (
                   >
                     Play Game
                   </SpecialLink>
+                  <SpecialLink
+                    className="project-link"
+                    href="https://github.com/elenizoump/EmojiSweeper"
+                  >
+                    <img src={gitHubLogo} alt="github Logo" />
+                  </SpecialLink>
                 </div>
               </div>
             </Project>
@@ -216,6 +229,12 @@ const ProjectsPage: FunctionComponent = () => (
                     href="https://guessmoji.netlify.app"
                   >
                     Play Game
+                  </SpecialLink>
+                  <SpecialLink
+                    className="project-link"
+                    href="https://github.com/elenizoump/Memoji"
+                  >
+                    <img src={gitHubLogo} alt="github Logo" />
                   </SpecialLink>
                 </div>
               </div>

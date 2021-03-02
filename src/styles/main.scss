@@ -336,6 +336,12 @@ p {
         color: rgb(56, 152, 152);
         text-decoration: none;
         background-color: transparent;
+
+        img {
+          max-width: 25px;
+          max-height: 25px;
+          margin-left: 10px;
+        }
       }
       a:hover {
         color: rgb(125, 194, 194);
